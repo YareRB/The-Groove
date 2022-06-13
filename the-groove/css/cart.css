@@ -1,0 +1,117 @@
+/*///// CART /////////////////////////////////////////////////////////////////////////////*/
+
+/* padding & margin */
+.padding-l-20 {
+  padding-left: 20rem !important;
+  padding-right: 20rem !important;
+}
+
+.margin-t-10 {
+  margin-top: 2.5rem;
+}
+
+/* images */
+.img-btn {
+  padding-bottom: 3px;
+  width: 18px;
+  height: 18px;
+}
+
+.img-cart {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+}
+
+.img-disc-cart {
+  position: absolute;
+  top: 13px;
+  left: 70px;
+  width: 100%;
+  height: 225px;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.cart-delete-icon {
+  width: 35px;
+  float: right;
+}
+
+/*button*/
+
+.radius-r {
+  border-top-right-radius: 2.5rem !important;
+  border-bottom-right-radius: 2.5rem !important;
+}
+
+.radius-l {
+  border-top-left-radius: 2.5rem !important;
+  border-bottom-left-radius: 2.5rem !important;
+}
+
+.btn-group {
+  padding-top: 200px;
+  float: right !important;
+}
+
+.btn-pay {
+  width: 8rem;
+  letter-spacing: 3px;
+  margin-left: 4rem;
+}
+
+.p-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 5rem;
+  margin-bottom: 3rem;
+}
+
+/* hr */
+.hr-1 {
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* diferentes tamaños */
+@media only screen and (min-width: 280px) and (max-width: 991px) {
+  .padding-l-20 {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+
+  /*tamaño de las images de los album */
+  .img-cart {
+    height: 200px;
+  }
+  .img-disc-cart {
+    height: 170px;
+  }
+
+  /* botones + y- */
+  .btn-group {
+    padding-top: 25px !important;
+    float: none !important ;
+  }
+
+  .cart-delete-icon {
+    width: 25px;
+  }
+
+  .p-fixed {
+    position: static !important;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem !important;
+    margin-bottom: 3rem;
+  }
+}
+/* #endregion */
