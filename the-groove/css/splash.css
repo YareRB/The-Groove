@@ -1,0 +1,64 @@
+
+/*/////SPLASH SCREEN/////////////////////////////////////////////////////////////////////////////*/
+
+/*NO SCROLL*/
+.splash-back {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+.splash-back::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+/*IMAGE SPLASH*/
+.huge-vinyl {
+    width: 720px;
+    height: 720px;
+    /*animation*/
+    animation-duration: 2s;
+    animation-name: rotation;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.start-vinyl {
+    position: absolute;
+    left: -180px;
+    z-index: 20;
+}
+
+/*TEXT SPLASH*/
+.splash-text {
+    /*font*/
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 70px;
+    /*position*/
+    position: absolute;
+    left: 570px;
+    top: 50%;
+    z-index: 10;
+    -ms-transform: translateY(300%);
+    transform: translateY(300%);
+    /*animation*/
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100;    
+    }
+}
