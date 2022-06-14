@@ -1,0 +1,20 @@
+.img-cart {
+  width: 100%;
+  height: 350px;
+}
+
+.img-disc-cart {
+  width: 100%;
+  height: 325px;
+}
+
+/* diferentes tamaños */
+@media only screen and (min-width: 280px) and (max-width: 991px) {
+  /*tamaño de las images de los album */
+  .img-cart {
+    height: 200px;
+  }
+  .img-disc-cart {
+    height: 170px;
+  }
+}

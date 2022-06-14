@@ -2,8 +2,8 @@
 
 /* padding & margin */
 .padding-l-20 {
-  padding-left: 20rem !important;
-  padding-right: 20rem !important;
+  padding-left: 18rem !important;
+  padding-right: 18rem !important;
 }
 
 .margin-t-10 {
@@ -22,7 +22,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 250px;
+  height: 210px;
 }
 
 .img-disc-cart {
@@ -30,7 +30,7 @@
   top: 13px;
   left: 70px;
   width: 100%;
-  height: 225px;
+  height: 185px;
 }
 
 .parent {
@@ -57,7 +57,7 @@
 }
 
 .btn-group {
-  padding-top: 200px;
+  padding-top: 178px;
   float: right !important;
 }
 
@@ -114,4 +114,5 @@
     margin-bottom: 3rem;
   }
 }
+
 /* #endregion */
