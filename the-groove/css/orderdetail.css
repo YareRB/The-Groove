@@ -9,6 +9,24 @@
   height: 325px;
 }
 
+.vinyl {
+  left: 60px;
+  height: 180px;
+}
+
+.disc {
+  top: 8.5px;
+  height: 200px;
+}
+
+.m-t-100 {
+  margin-top: 100px;
+}
+
+.m-s-20 {
+  padding-left: 7.5rem;
+}
+
 /* diferentes tamaños */
 @media only screen and (min-width: 280px) and (max-width: 991px) {
   /*tamaño de las images de los album */
@@ -17,5 +35,12 @@
   }
   .img-disc-cart {
     height: 170px;
+  }
+  .m-t-100 {
+    margin-top: 20px;
+  }
+  
+  .m-s-20 {
+    padding-left: 1.5rem;
   }
 }
