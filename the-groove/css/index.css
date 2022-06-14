@@ -94,6 +94,11 @@
     font-size: 17px;
 }
 
+.text-inter-25 {
+  font-size: 25px;
+  font-family: "Inter", sans-serif;
+}
+
 .center-horizontally {
   margin-left: auto;
   margin-right: auto;

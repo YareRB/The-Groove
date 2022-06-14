@@ -3,7 +3,7 @@
 /* padding & margin */
 .padding-l-20 {
   padding-left: 18rem !important;
-  padding-right: 18rem !important;
+  padding-right: 20rem !important;
 }
 
 .margin-t-10 {
@@ -11,10 +11,9 @@
 }
 
 /* images */
-.img-btn {
-  padding-bottom: 3px;
-  width: 18px;
-  height: 18px;
+.img-icono {
+  padding-bottom: 10px;
+  width: 15px;
 }
 
 .img-cart {
@@ -40,7 +39,7 @@
 }
 
 .cart-delete-icon {
-  width: 35px;
+  width: 20px;
   float: right;
 }
 
@@ -54,6 +53,10 @@
 .radius-l {
   border-top-left-radius: 2.5rem !important;
   border-bottom-left-radius: 2.5rem !important;
+}
+
+.btn-less-more{
+height: 2rem;
 }
 
 .btn-group {
@@ -73,12 +76,6 @@
   right: 0;
   margin-right: 5rem;
   margin-bottom: 3rem;
-}
-
-/* hr */
-.hr-1 {
-  border-style: solid;
-  border-width: 1px;
 }
 
 /* diferentes tamaños */
@@ -103,7 +100,7 @@
   }
 
   .cart-delete-icon {
-    width: 25px;
+    width: 15px;
   }
 
   .p-fixed {
