@@ -4,3 +4,49 @@
 .color-gray {
   color: rgb(169, 169, 169);
 }
+
+
+/* button */ 
+.white-input {
+  background-color: rgba(0, 0, 0, 0);
+
+  color: rgb(0, 0, 0);
+  text-align: start;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+
+  width: 100%;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  margin-top: 40px;
+
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-width: 1px;
+  outline: none;
+}
+
+/* images */
+.img-icon{
+  width: 20px;
+  height: 20px;
+}
+
+/*position*/
+.relative-div {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.abs-icon {
+  position: absolute;
+  top: 48px;
+  right: 40px;
+}
