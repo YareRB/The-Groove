@@ -1,0 +1,56 @@
+
+/*/////MY ACCOUNT/////////////////////////////////////////////////////////////////////////////*/
+
+.black-button {
+    background-color: rgb(0, 0, 0);
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    border-radius: 100px;
+
+    margin-top: 30px;
+
+}
+
+body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.vynil {
+    margin: 0px;
+    padding: 0px;
+    width: 350px;
+    height: 350px;
+    z-index: 10px;
+}
+
+.pfp {
+    margin: 0px;
+    padding: 0px;
+    width: 350px;
+    height: 350px;
+    z-index: 50px;
+}
+
+.orders {
+    margin-top: 130px;
+}
+
+.general-text {
+    /*font*/
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+}

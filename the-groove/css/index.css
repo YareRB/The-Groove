@@ -74,6 +74,26 @@
   font-size: 70px;
 }
 
+.subtitle {
+    /*font*/
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 55px;
+}
+
+.subtitle2 {
+    /*font*/
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.general-text {
+    /*font*/
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+}
+
 .center-horizontally {
   margin-left: auto;
   margin-right: auto;
