@@ -43,13 +43,13 @@
         <?php
         switch ($seccion) {
             case "home":
-                //include("pages/landingpage/index.php");
+                include("pages/landingpage/index.php");
                 break;
             case "products":
-                //include("pages/products/index.php");
+                include("pages/products/index.php");
                 break;
             case "cart":
-                //include("pages/cart/index.php");
+                include("pages/cart/index.php");
                 break;
             case "myaccount":
                 include("pages/myaccount/index.php");

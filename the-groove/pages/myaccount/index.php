@@ -19,35 +19,35 @@
         <p class="subtitle2">My Orders</p>
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img class="img-fluid" src="./images/after-hours-the-weeknd.svg" alt="">
+                <img width="300px" height="300px" class="img-fluid" src="./images/after-hours-the-weeknd.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img class="img-fluid" src="./images/blonde-frank-ocean.svg" alt="">
+                <img width="300px" height="300px" class="img-fluid" src="./images/blonde-frank-ocean.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img class="img-fluid" src="./images/blood-type-cautious-clay.svg" alt="">
+                <img width="300px" height="300px" class="img-fluid" src="./images/blood-type-cautious-clay.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img class="img-fluid" src="./images/ctrl-sza.svg" alt="">
+                <img width="300px" height="300px" class="img-fluid" src="./images/ctrl-sza.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img class="img-fluid" src="./images/dawn-sg-lewis.svg" alt="">
+                <img width="300px" height="300px" class="img-fluid" src="./images/dawn-sg-lewis.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img class="img-fluid" src="./images/harrys-house-harry-styles.svg" alt="">
+                <img width="300px" height="300px" class="img-fluid" src="./images/harrys-house-harry-styles.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img class="img-fluid" src="./images/happier-than-ever-billie-eilish.svg" alt="">
+                <img width="300px" height="300px" class="img-fluid" src="./images/happier-than-ever-billie-eilish.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img class="img-fluid" src="./images/golden-hour-kacey-musgraves.svg" alt="">
+                <img width="300px" height="300px" class="img-fluid" src="./images/golden-hour-kacey-musgraves.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
         </div>
