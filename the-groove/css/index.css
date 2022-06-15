@@ -59,6 +59,10 @@
   position: fixed;
   bottom: 0;
 }
+body{
+  overflow-x: hidden;
+
+}
 
 /*FORM*/
 
