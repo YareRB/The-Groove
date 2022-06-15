@@ -18,8 +18,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark black-background">
         <div class="container">
-          <a class="navbar-brand" href="?seccion=inicio">
-              <img height="35" class="d-inline-block align-text-top" src="../../images/logo.svg" type = "image/x-icon">
+          <a class="navbar-brand" href="?seccion=home">
+              <img height="35" class="d-inline-block align-text-top" src="./images/logo.svg" type = "image/x-icon">
           </a>
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,47 +31,38 @@
             <ul class="navbar-nav ms-auto d-flex flex-row mt-5 mt-lg-0">
 
                 <li class="nav-item p-3 text-center mx-2 mx-lg-1">
-                  <a class="nav-link active" href="#!">
+                  <a class="nav-link active" href="?seccion=home">
                     <div class="p-1">
-                      <i class="fas fa-bell fa-lg mb-1"><img class="align-self-center" width="25px" src="../../icons/home.svg" alt=""></i>
+                      <i class="fas fa-bell fa-lg mb-1"><img class="align-self-center" width="25px" src="./icons/home.svg" alt=""></i>
                     </div>
                     Home
                   </a>
                 </li>
 
                 <li class="nav-item p-3 text-center mx-2 mx-lg-1">
-                  <a class="nav-link active" href="#!">
+                  <a class="nav-link active" href="?seccion=products">
                     <div class="p-1">
-                      <i class="fas fa-bell fa-lg mb-1"><img class="align-self-center" width="25px" src="../../icons/vynil-icon.svg" alt=""></i>
+                      <i class="fas fa-bell fa-lg mb-1"><img class="align-self-center" width="25px" src="./icons/vynil-icon.svg" alt=""></i>
                     </div>
                     Products
                   </a>
                 </li>
 
                 <li class="nav-item p-3 text-center mx-2 mx-lg-1">
-                  <a class="nav-link active" href="#!">
+                  <a class="nav-link active" href="?seccion=cart">
                     <div class="p-1">
-                      <i class="fas fa-bell fa-lg mb-1"><img class="align-self-center" width="25px" src="../../icons/cart.svg" alt=""></i>
+                      <i class="fas fa-bell fa-lg mb-1"><img class="align-self-center" width="25px" src="./icons/cart.svg" alt=""></i>
                     </div>
                     Cart
                   </a>
                 </li>
 
                 <li class="nav-item p-3 text-center mx-2 mx-lg-1">
-                  <a class="nav-link active" href="#!">
+                  <a class="nav-link active" href="?seccion=myaccount">
                     <div class="p-1">
-                      <i class="fas fa-bell fa-lg mb-1"><img class="align-self-center" width="25px" src="../../icons/account.svg" alt=""></i>
+                      <i class="fas fa-bell fa-lg mb-1"><img class="align-self-center" width="25px" src="./icons/account.svg" alt=""></i>
                     </div>
                     Account
-                  </a>
-                </li>
-
-                <li class="nav-item p-3 text-center mx-2 mx-lg-1">
-                  <a class="nav-link active" href="#!">
-                    <div class="p-1">
-                      <i class="fas fa-bell fa-lg mb-1"><img class="align-self-center" width="25px" src="../../icons/about.svg" alt=""></i>
-                    </div>
-                    About Us
                   </a>
                 </li>
                 

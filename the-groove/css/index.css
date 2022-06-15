@@ -50,6 +50,16 @@
   border-bottom-color: rgb(255, 255, 255);
 }
 
+.n-fixed {
+  position: fixed;
+  top: 0;
+}
+
+.p-fixed {
+  position: fixed;
+  bottom: 0;
+}
+
 /*FORM*/
 
 /* fuentes */

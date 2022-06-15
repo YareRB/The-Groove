@@ -19,12 +19,12 @@
     <div class="container-fluid black-background">
         <div class="container-fluid p-2">
           <div class="text-center m-3">
-            <a class="p-2" href="https://www.facebook.com/yare.ramirez02/">
-                <img class="img-fluid" width="25px" src="../../icons/facebook.svg" alt=""></a>
+            <a class="p-2" href="https://www.facebook.com/paco.salazarruiz/">
+                <img class="img-fluid" width="25px" src="./icons/facebook.svg" alt=""></a>
             <a class="p-2" href="https://www.instagram.com/yare_rb2/">
-                <img class="img-fluid" width="25px" src="../../icons/instagram.svg" alt=""></a>
-            <a class="p-2" href="https://github.com/yareli-ramirez">
-                <img class="img-fluid" width="25px" src="../../icons/twitter.svg" alt="">
+                <img class="img-fluid" width="25px" src="./icons/instagram.svg" alt=""></a>
+            <a class="p-2" href="https://twitter.com/Yanet_RedVille">
+                <img class="img-fluid" width="25px" src="./icons/twitter.svg" alt="">
             </a>
           </div>
         </div>
