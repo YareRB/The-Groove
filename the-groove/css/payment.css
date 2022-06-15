@@ -1,0 +1,59 @@
+/*///// PAYMENT /////////////////////////////////////////////////////////////////////////////*/
+
+.bg-gray{
+    background-color: #EFEBEB;
+    border-radius: 15px;
+}
+
+.bc-black{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    height: 12rem;
+    position: fixed;
+    right: 0;
+    margin-right: 5rem;
+}
+
+.bg-black{
+    background-color: #EFEBEB !important;
+    border-color: black !important;
+    border-style: solid !important;
+    border-width:thin;
+}
+
+.bg-black:checked{
+    background-color: black !important;
+}
+
+.img-icon{
+    width: 50px;
+    float: right;
+    margin-right: 20px;
+}
+
+.pl-10{
+    padding-left: 10rem!important;
+}
+
+.input-r{
+    border-radius: 5px;
+    border: none !important;
+    outline: none;
+}
+
+.ms-25{
+    margin-left:150px;
+}
+
+.ms-total{
+    margin-left:150px;
+}
+
+.btnFinish{
+    width: 12%;
+    position: fixed;
+    right: 0;
+    top: 280px;
+    margin-right: 5rem;
+}
