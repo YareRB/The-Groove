@@ -27,6 +27,11 @@
   padding-left: 7.5rem;
 }
 
+.text{
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+}
+
 /* diferentes tamaños */
 @media only screen and (min-width: 280px) and (max-width: 991px) {
   /*tamaño de las images de los album */

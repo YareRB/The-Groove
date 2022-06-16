@@ -54,6 +54,11 @@
     width: 12%;
     position: fixed;
     right: 0;
-    top: 280px;
+    top: 400px !important;
     margin-right: 5rem;
+}
+
+.text{
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
 }
