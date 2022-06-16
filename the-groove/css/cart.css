@@ -2,8 +2,8 @@
 
 /* padding & margin */
 .padding-l-20 {
-  padding-left: 18rem !important;
-  padding-right: 20rem !important;
+  padding-left: 15rem !important;
+  padding-right: 16rem !important;
 }
 
 .margin-t-10 {
@@ -74,8 +74,8 @@ height: 2rem;
   position: fixed;
   bottom: 0;
   right: 0;
-  margin-right: 5rem;
-  margin-bottom: 3rem;
+  margin-right: 2rem;
+  margin-bottom: 5rem;
 }
 
 /* diferentes tamaños */
