@@ -1,4 +1,21 @@
-<div class="black-scroll white-background">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the groove.</title>
+    <link rel = "icon" href = "../../images/vinyl-base.svg" type = "image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lato:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/index.css" />
+</head>
+<body class="black-scroll white-background">
     
     <div class="row g-0">
 
@@ -19,35 +36,35 @@
         <p class="subtitle2">My Orders</p>
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img width="300px" height="300px" class="img-fluid" src="./images/after-hours-the-weeknd.svg" alt="">
+                <img width="250px" height="250px" class="img-fluid" src="./images/after-hours-the-weeknd.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img width="300px" height="300px" class="img-fluid" src="./images/blonde-frank-ocean.svg" alt="">
+                <img width="250px" height="250px" class="img-fluid" src="./images/blonde-frank-ocean.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img width="300px" height="300px" class="img-fluid" src="./images/blood-type-cautious-clay.svg" alt="">
+                <img width="250px" height="250px" class="img-fluid" src="./images/blood-type-cautious-clay.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img width="300px" height="300px" class="img-fluid" src="./images/ctrl-sza.svg" alt="">
+                <img width="250px" height="250px" class="img-fluid" src="./images/ctrl-sza.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img width="300px" height="300px" class="img-fluid" src="./images/dawn-sg-lewis.svg" alt="">
+                <img width="250px" height="250px" class="img-fluid" src="./images/dawn-sg-lewis.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img width="300px" height="300px" class="img-fluid" src="./images/harrys-house-harry-styles.svg" alt="">
+                <img width="250px" height="250px" class="img-fluid" src="./images/harrys-house-harry-styles.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img width="300px" height="300px" class="img-fluid" src="./images/happier-than-ever-billie-eilish.svg" alt="">
+                <img width="250px" height="250px" class="img-fluid" src="./images/happier-than-ever-billie-eilish.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <img width="300px" height="300px" class="img-fluid" src="./images/golden-hour-kacey-musgraves.svg" alt="">
+                <img width="250px" height="250px" class="img-fluid" src="./images/golden-hour-kacey-musgraves.svg" alt="">
                 <p class="general-text">Title - artist</p>
             </div>
         </div>
@@ -55,4 +72,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-</div>
+    </body>
+</html>
