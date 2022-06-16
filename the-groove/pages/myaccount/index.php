@@ -20,7 +20,7 @@
     <div class="container">
     <div class="row g-0">
 
-        <div class="col" style="position: relative;">
+        <div class="col m-4" style="position: relative;">
             <img style="position: absolute; left: 27%; height: auto; width: 100%; max-width: 350px;" src="./images/vinyl.svg" alt="">
             <img src="./images/thank-u-next-ariana-grande.svg" style="position: absolute; height: auto; width: 100%; max-width: 350px;" alt="">
         </div>

@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the groove.</title>
+    <title>The groove</title>
     <link rel = "icon" href = "./icons/vynil-icon.svg" type = "image/x-icon">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -32,50 +32,61 @@
     
 <?php
         $seccion = (isset($_GET['seccion']) && $_GET['seccion'] != '') ? $_GET['seccion'] : 'home';
-        $accion = (isset($_GET['accion']) && $_GET['accion'] != '') ? $_GET['accion'] : 'lista';
-        include("pages/navbar/index.php");
         ?>
 
-        <br>
-        <br>
 
         <?php
         switch ($seccion) {
             case "home":
+                include("pages/navbar/index.php");
                 include("pages/landingpage/index.php");
+                include("pages/footer/index.php");
                 break;
             case "products":
+                include("pages/navbar/index.php");
                 include("pages/products/index.php");
+                include("pages/footer/index.php");
                 break;
             case "cart":
+                include("pages/navbar/index.php");
                 include("pages/cart/index.php");
+                include("pages/footer/index.php");
                 break;
             case "myaccount":
-                //include("pages/login/index.php");
-                //include("pages/signup/index.php");
+                include("pages/navbar/index.php");
                 include("pages/myaccount/index.php");
+                include("pages/footer/index.php");
+                break;
+            case "signup":
+                include("pages/signup/index.php");
+                break;
+            case "login":
+                include("pages/login/index.php");
                 break;
             case "myorders":
+                include("pages/navbar/index.php");
                 include("pages/myorders/index.php");
+                include("pages/footer/index.php");
                 break;
             case "orderdetail":
+                include("pages/navbar/index.php");
                 include("pages/orderdetail/index.php");
+                include("pages/footer/index.php");
                 break;
             case "payment":
+                include("pages/navbar/index.php");
                 include("pages/payment/index.php");
+                include("pages/footer/index.php");
                 break;
             case "detailproduct":
+                include("pages/navbar/index.php");
                 include("pages/detailproduct/index.php");
+                include("pages/footer/index.php");
                 break;
         }
 
     ?>
-
-        <br>
-        <br>
-        <br>
 <?php
-    include("pages/footer/index.php");
 ?>
     
 </body>

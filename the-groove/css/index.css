@@ -55,10 +55,12 @@
   top: 0;
 }
 
-.p-fixed {
+.footer-fixed {
   position: fixed;
   bottom: 0;
+  margin-bottom: 1px !important;
 }
+
 body{
   overflow-x: hidden;
 
