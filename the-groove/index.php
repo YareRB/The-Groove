@@ -39,7 +39,6 @@
         <br>
         <br>
 
-        <div class="container">
         <?php
         switch ($seccion) {
             case "home":
@@ -57,7 +56,6 @@
         }
 
     ?>
-</div>
 
         <br>
         <br>
