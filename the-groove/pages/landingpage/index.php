@@ -19,14 +19,14 @@
 <body>
     <section style="padding: 3rem;">
         <div class="container">
-            <img src="../../images/banner-landing-page.svg" style="width: 100%;" alt="">
+            <img src="./images/banner-landing-page.svg" style="width: 100%;" alt="">
             <div style="margin-top: 70px;" class="row">
                 <div class="col">
                     <span class="subtitle">About us</span>
                     <p class="general-text">aaaaaaaasdasffffffffffffffasfasssssssafsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafwa waaaaaaaaaaaaaaaaafasf</p>
                 </div>
                 <div class="col">
-                    <img style="border-radius: 10px;" src="../../images/dawn-sg-lewis.svg" height="100%" width="100%" alt="">
+                    <img style="border-radius: 10px;" src="./images/dawn-sg-lewis.svg" height="100%" width="100%" alt="">
                 </div>
             </div>
         </div>

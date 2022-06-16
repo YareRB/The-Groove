@@ -12,9 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lato:wght@900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/the-groove/css/index.css">
-    <link rel="stylesheet" href="/the-groove/css/cart.css">
-    <link rel="stylesheet" href="/the-groove/css/landing.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/landing.css">
 </head>
 <body class="black-scroll">
     <section>
@@ -22,17 +22,17 @@
             <div class="row">
                     <div class="col-11 col-sm-11 col-md-8 col-lg-6 col-xl-6 col-xxl-5 ms-5 mb-3 parent ">
                         <p><input type="text" class="white-input relative-div" placeholder="Search...">
-                        <img class="img-icon abs-icon" src="../../icons/search.svg" alt="">
+                        <img class="img-icon abs-icon" src="./icons/search.svg" alt="">
                         </p>
                     </div>
                     <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ms-5 mb-3 parent ">
                         <p><input type="text" class="white-input relative-div" placeholder="Filter">
-                        <img class="img-icon abs-icon" src="../../icons/filter.svg" alt="">
+                        <img class="img-icon abs-icon" src="./icons/filter.svg" alt="">
                         </p>
                     </div>
                     <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-3 col-xxl-2 ms-5 mb-3 parent ">
                         <p><input type="text" class="white-input relative-div" placeholder="Filter">
-                        <img class="img-icon abs-icon" src="../../icons/order.svg" alt="">
+                        <img class="img-icon abs-icon" src="./icons/order.svg" alt="">
                         </p>
                     </div>
             </div>
@@ -42,8 +42,8 @@
         <div class="container-fluid mx-4">
             <div style="display: flex; flex-direction: row; flex-wrap: wrap; overflow: hidden;">
                 <div style="width: 25%;" class="parent mb-4">
-                    <img class="img-vinyl" src="../../images/vinyl.svg" alt="">
-                    <img class="img-album" src="../../images/sunbeam-alina-baraz.svg" alt="">
+                    <img class="img-vinyl" src="./images/vinyl.svg" alt="">
+                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt="">
                     <div class="row px-4 pt-2">
                         <div class="col-7">
                             <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
@@ -54,8 +54,8 @@
                     </div>
                 </div>
                 <div style="width: 25%;" class="parent mb-4">
-                    <img class="img-vinyl" src="../../images/vinyl.svg" alt="">
-                    <img class="img-album" src="../../images/sunbeam-alina-baraz.svg" alt="">
+                    <img class="img-vinyl" src="./images/vinyl.svg" alt="">
+                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt="">
                     <div class="row px-4 pt-2">
                         <div class="col-7">
                             <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
@@ -65,8 +65,8 @@
                         </div>
                     </div>
                 </div><div style="width: 25%;" class="parent mb-4">
-                    <img class="img-vinyl" src="../../images/vinyl.svg" alt="">
-                    <img class="img-album" src="../../images/sunbeam-alina-baraz.svg" alt="">
+                    <img class="img-vinyl" src="./images/vinyl.svg" alt="">
+                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt="">
                     <div class="row px-4 pt-2">
                         <div class="col-7">
                             <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
@@ -76,8 +76,8 @@
                         </div>
                     </div>
                 </div><div style="width: 25%;" class="parent mb-4">
-                    <img class="img-vinyl" src="../../images/vinyl.svg" alt="">
-                    <img class="img-album" src="../../images/sunbeam-alina-baraz.svg" alt="">
+                    <img class="img-vinyl" src="./images/vinyl.svg" alt="">
+                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt="">
                     <div class="row px-4 pt-2">
                         <div class="col-7">
                             <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
@@ -87,8 +87,8 @@
                         </div>
                     </div>
                 </div><div style="width: 25%;" class="parent mb-4">
-                    <img class="img-vinyl" src="../../images/vinyl.svg" alt="">
-                    <img class="img-album" src="../../images/sunbeam-alina-baraz.svg" alt="">
+                    <img class="img-vinyl" src="./images/vinyl.svg" alt="">
+                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt="">
                     <div class="row px-4 pt-2">
                         <div class="col-7">
                             <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
