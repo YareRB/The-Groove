@@ -42,8 +42,9 @@
         <div class="container-fluid mx-4">
             <div style="display: flex; flex-direction: row; flex-wrap: wrap; overflow: hidden;">
                 <div style="width: 25%;" class="parent mb-4">
+                <a id="link" href="?seccion=detailproduct">
                     <img class="img-vinyl" src="./images/vinyl.svg" alt="">
-                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt="">
+                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt=""></a>
                     <div class="row px-4 pt-2">
                         <div class="col-7">
                             <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
@@ -54,8 +55,9 @@
                     </div>
                 </div>
                 <div style="width: 25%;" class="parent mb-4">
+                <a id="link" href="?seccion=detailproduct">
                     <img class="img-vinyl" src="./images/vinyl.svg" alt="">
-                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt="">
+                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt=""></a>
                     <div class="row px-4 pt-2">
                         <div class="col-7">
                             <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
@@ -64,9 +66,11 @@
                             <p class="lbl-precio">$800</p>
                         </div>
                     </div>
-                </div><div style="width: 25%;" class="parent mb-4">
+                </div>
+                <div style="width: 25%;" class="parent mb-4">
+                <a id="link" href="?seccion=detailproduct">
                     <img class="img-vinyl" src="./images/vinyl.svg" alt="">
-                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt="">
+                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt=""></a>
                     <div class="row px-4 pt-2">
                         <div class="col-7">
                             <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
@@ -75,9 +79,11 @@
                             <p class="lbl-precio">$800</p>
                         </div>
                     </div>
-                </div><div style="width: 25%;" class="parent mb-4">
+                </div>
+                <div style="width: 25%;" class="parent mb-4">
+                <a id="link" href="?seccion=detailproduct">
                     <img class="img-vinyl" src="./images/vinyl.svg" alt="">
-                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt="">
+                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt=""></a>
                     <div class="row px-4 pt-2">
                         <div class="col-7">
                             <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
@@ -86,9 +92,11 @@
                             <p class="lbl-precio">$800</p>
                         </div>
                     </div>
-                </div><div style="width: 25%;" class="parent mb-4">
+                </div>
+                <div style="width: 25%;" class="parent mb-4">
+                <a id="link" href="?seccion=detailproduct">
                     <img class="img-vinyl" src="./images/vinyl.svg" alt="">
-                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt="">
+                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt=""></a>
                     <div class="row px-4 pt-2">
                         <div class="col-7">
                             <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
