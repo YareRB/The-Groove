@@ -28,7 +28,9 @@
             <p class="subtitle mt-4">Hello, User!</p>
             <p class="general-text">user@email.com</p>
             <p class="general-text">477 707 77 66</p>
-            <button class="black-button">Go to My Orders</button>
+            <a href="?seccion=myorders">
+                <button class="black-button">Go to My Orders</button>
+            </a>
         </div>
 
     </div>
