@@ -51,9 +51,9 @@
                 include("pages/cart/index.php");
                 break;
             case "myaccount":
-                include("pages/login/index.php");
+                //include("pages/login/index.php");
                 //include("pages/signup/index.php");
-                //include("pages/myaccount/index.php");
+                include("pages/myaccount/index.php");
                 break;
             case "myorders":
                 include("pages/myorders/index.php");
@@ -63,6 +63,9 @@
                 break;
             case "payment":
                 include("pages/payment/index.php");
+                break;
+            case "detailproduct":
+                include("pages/detailproduct/index.php");
                 break;
         }
 
