@@ -53,9 +53,14 @@
                 include("pages/footer/index.php");
                 break;
             case "myaccount":
-                include("pages/navbar/index.php");
-                include("pages/myaccount/index.php");
-                include("pages/footer/index.php");
+                if(isset($_SESSION["id"])) {
+                    include("pages/navbar/index.php");
+                    include("pages/myaccount/index.php");
+                    include("pages/footer/index.php");
+                }
+                else {
+                    include("pages/login/index.php");
+                }
                 break;
             case "signup":
                 include("pages/signup/index.php");
