@@ -1,3 +1,8 @@
+<?php
+    $consulta  = "SELECT * FROM jramirez.vinyl v LEFT JOIN jramirez.artist a ON v.idVinyl = a.idArtist ORDER BY artistName;";
+    $query = $conn->prepare($consulta);
+    $query->execute();
+        ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,71 +46,25 @@
     <section>
         <div class="container-fluid mx-4">
             <div style="display: flex; flex-direction: row; flex-wrap: wrap; overflow: hidden;">
+                <?php 
+                     while($registro = $query->fetch()) {
+                ?>
                 <div style="width: 25%;" class="parent mb-4">
-                <a id="link" href="?seccion=detailproduct">
+                <a id="link" href="?seccion=detailproduct&idVinyl=<?=$registro["idVinyl"]?>">
                     <img class="img-vinyl" src="./images/vinyl.svg" alt="">
-                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt=""></a>
+                    <img class="img-album" src="./images/<?=$registro["image"]?>" alt=""></a>
                     <div class="row px-4 pt-2">
                         <div class="col-7">
-                            <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
+                            <h3 class="lbl-titulo"><?=$registro["artistName"]?> - <?=$registro["vinylName"]?></h3>
                         </div>
                         <div class="col-5">
-                            <p class="lbl-precio">$800</p>
+                            <p class="lbl-precio">$<?=$registro["price"]?></p>
                         </div>
                     </div>
                 </div>
-                <div style="width: 25%;" class="parent mb-4">
-                <a id="link" href="?seccion=detailproduct">
-                    <img class="img-vinyl" src="./images/vinyl.svg" alt="">
-                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt=""></a>
-                    <div class="row px-4 pt-2">
-                        <div class="col-7">
-                            <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
-                        </div>
-                        <div class="col-5">
-                            <p class="lbl-precio">$800</p>
-                        </div>
-                    </div>
-                </div>
-                <div style="width: 25%;" class="parent mb-4">
-                <a id="link" href="?seccion=detailproduct">
-                    <img class="img-vinyl" src="./images/vinyl.svg" alt="">
-                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt=""></a>
-                    <div class="row px-4 pt-2">
-                        <div class="col-7">
-                            <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
-                        </div>
-                        <div class="col-5">
-                            <p class="lbl-precio">$800</p>
-                        </div>
-                    </div>
-                </div>
-                <div style="width: 25%;" class="parent mb-4">
-                <a id="link" href="?seccion=detailproduct">
-                    <img class="img-vinyl" src="./images/vinyl.svg" alt="">
-                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt=""></a>
-                    <div class="row px-4 pt-2">
-                        <div class="col-7">
-                            <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
-                        </div>
-                        <div class="col-5">
-                            <p class="lbl-precio">$800</p>
-                        </div>
-                    </div>
-                </div>
-                <div style="width: 25%;" class="parent mb-4">
-                <a id="link" href="?seccion=detailproduct">
-                    <img class="img-vinyl" src="./images/vinyl.svg" alt="">
-                    <img class="img-album" src="./images/sunbeam-alina-baraz.svg" alt=""></a>
-                    <div class="row px-4 pt-2">
-                        <div class="col-7">
-                            <h3 class="lbl-titulo">Alina Baraz - Sunbeam</h3>
-                        </div>
-                        <div class="col-5">
-                            <p class="lbl-precio">$800</p>
-                        </div>
-                    </div>
-                </div>
+                <?php 
+                } 
+                ?>
             </div>
         </div>
     </section>
