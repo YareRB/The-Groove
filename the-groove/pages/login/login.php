@@ -28,8 +28,8 @@
                 <p class="title">LogIn</p>
                 <form id="formulario" action="?seccion=login&amp;accion=validate" method="post">
                     <fieldset>
-                    <p><input id="username" type="text" required name="username" id="username" class="white-input" placeholder="Username"></p>
-                    <p><input id="password" type="password" required name="password" id="password" class="white-input" placeholder="Password"></p>
+                    <p><input type="text" required name="username" id="username" class="white-input" placeholder="Username"></p>
+                    <p><input type="password" required name="password" id="password" class="white-input" placeholder="Password"></p>
                     <div>
                         <a href="?seccion=login&accion=validate"><button class="black-button">Let's groove!</button></a>
                     </div>
