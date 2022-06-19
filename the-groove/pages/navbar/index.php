@@ -89,7 +89,7 @@
                 </li>
 
                 <li class="nav-item p-3 text-center mx-2 mx-lg-1">
-                  <a class="nav-link active" href="#">
+                  <a class="nav-link active" href="?seccion=login&amp;accion=logout">
                     <div class="p-1">
                       <i class="fas fa-bell fa-lg mb-1"><img class="align-self-center" width="25px" src="./icons/logout.svg" alt=""></i>
                     </div>
