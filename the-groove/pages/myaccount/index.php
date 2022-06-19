@@ -25,9 +25,9 @@
             <img src="./images/thank-u-next-ariana-grande.svg" style="position: absolute; height: auto; width: 100%; max-width: 350px;" alt="">
         </div>
         <div class="col">
-            <p class="subtitle mt-4">Hello, User!</p>
-            <p class="general-text">user@email.com</p>
-            <p class="general-text">477 707 77 66</p>
+            <p class="subtitle mt-4">Hello, <?=$_SESSION["username"]?>!</p>
+            <p class="general-text"><?=$_SESSION["email"]?></p>
+            <p class="general-text"><?=$_SESSION["phoneNumber"]?></p>
             <a href="?seccion=myorders">
                 <button class="black-button">Go to My Orders</button>
             </a>
