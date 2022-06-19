@@ -62,3 +62,32 @@
     font-family: 'Inter', sans-serif;
     font-size: 17px;
 }
+
+#map {
+    width: 100%;
+    height: 350px;
+}
+
+
+.white-input {
+    background-color: rgba(0, 0, 0, 0);
+
+    color: rgb(0, 0, 0);
+    text-align: start;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+
+    width: 100%;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    border-width: 1px;
+    outline: none;
+}

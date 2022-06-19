@@ -38,5 +38,5 @@
     
 ?>
 <script>
-    window.location.href = "?seccion=payment&idOrder=<?=$total?>";
+    window.location.href = "?seccion=payment&dato1=<?=$total?>&dato2=<?=$idOrder?>";
 </script> 
