@@ -61,15 +61,19 @@
 
     </div>
     <div class="float-end p-fixed">
-    <input type="number" hidden value="<?=$total ?>" id="totalInput">
-        <p class="title-lato">Total: $<label class="text-inter-25" id="totalLabel"><?=$total ?> </label></p>
-        <a href="?seccion=payment">
-            <button type="button" class="btn bg-dark radius-l radius-r text-white btn-pay title-inter-12" >Pay</button>
-        </a>
+        <form id="formulario" action="?seccion=cart&amp;accion=payCart" method="post">
+            <fieldset>
+                <input  name="totalInput" id="totalInput" type="number" hidden value="<?=$total?>" id="totalInput">
+                <p class="title-lato">Total: $<label class="text-inter-25" id="totalLabel"><?=$total ?> </label></p>
+                <button type="submit" class="btn bg-dark radius-l radius-r text-white btn-pay title-inter-12" >Pay</button>
+            </fieldset>
+        </form>
     </div>
 
     <script>
         var total = parseFloat(document.getElementById("totalInput").value);
+        document.getElementById("totalInput").value = total;
+
         function menos(index){
             var pieza = parseInt(document.getElementById(index).innerHTML);
             if(pieza > 1){
