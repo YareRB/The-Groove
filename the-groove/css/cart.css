@@ -67,7 +67,7 @@ height: 2rem;
 .btn-pay {
   width: 8rem;
   letter-spacing: 3px;
-  margin-left: 4rem;
+  margin-left: 1.2rem;
 }
 
 .p-fixed {
@@ -75,7 +75,7 @@ height: 2rem;
   bottom: 0;
   right: 0;
   margin-right: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 }
 
 /* diferentes tamaños */
