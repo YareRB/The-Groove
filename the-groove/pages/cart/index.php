@@ -11,8 +11,8 @@
             case "borrarVinyl":
                 include ("borrarVinyl.php");
                 break;
-            case "pay":
-                
+            case "payCart":
+                include ("payCart.php");
                 break;
         }
     }
