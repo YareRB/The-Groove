@@ -14,8 +14,6 @@
 	$cuenta = 0;
 	$cuenta = $query -> rowCount();
 
-    print($cuenta);
-
 	if ($cuenta)
 	{
       $redireccionar = "?seccion=home";
