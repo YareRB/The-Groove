@@ -8,6 +8,9 @@
             case "payment":
                 include ("payment.php");
                 break;
+            case "finish":
+                include ("finish.php");
+                break;
         }
     }
     else

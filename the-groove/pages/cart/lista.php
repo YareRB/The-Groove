@@ -31,7 +31,14 @@
 <body class="black-scroll">
     <div class="container-fluid padding-l-20 mt-5 margin-t-10">
         <?php 
-        while($registro = $query->fetch()) {
+        $cuenta = 0;
+        $cuenta = $query -> rowCount();
+        if($cuenta>0){
+            $mostrarB = 1;
+        }else{
+            $mostrarB = 0;
+        }
+        while($registro = $query->fetch()) {        
             $total += $registro["price"];
             ?>
         <div class="row pb-4">
@@ -60,7 +67,7 @@
     ?>
 
     </div>
-    <div class="float-end p-fixed">
+    <div class="float-end p-fixed" id="botonPay">
         <form id="formulario" action="?seccion=cart&amp;accion=payCart" method="post">
             <fieldset>
                 <input  name="totalInput" id="totalInput" type="number" hidden value="<?=$total?>" id="totalInput">
@@ -71,6 +78,11 @@
     </div>
 
     <script>
+        if(<?= $mostrarB?>){
+            document.getElementById("botonPay").hidden = false; 
+        }else{
+            document.getElementById("botonPay").hidden = true; 
+        }
         var total = parseFloat(document.getElementById("totalInput").value);
         document.getElementById("totalInput").value = total;
 

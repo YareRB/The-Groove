@@ -121,7 +121,7 @@
             <br>
             <label class="text ms-2"> <strong>Shipping cost:</strong> <label class="ms-2">$200</label></label><br>
             <label class="text ms-2 mt-4"> <strong>Total to pay: <label for="">$<?=$total + 200?></label></strong></label>
-            <a href="?seccion=products"> 
+            <a href="?seccion=payment&amp;accion=finish&idOrder=<?=$idOrder?>"> 
                 <button type="submit" class="btn bg-dark radius-l radius-r text-white title-inter-12 btnFinish " >FINISH</button>
             </a>
 
