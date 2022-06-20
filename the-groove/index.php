@@ -26,17 +26,22 @@
 
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/myaccount.css" />
+
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
     
 </head>
 <body class="dark-background text-whity black-scroll">
-    
-<?php
-        $seccion = (isset($_GET['seccion']) && $_GET['seccion'] != '') ? $_GET['seccion'] : 'home';
-        ?>
 
+        <?php
+            $seccion = (isset($_GET['seccion']) && $_GET['seccion'] != '') ? $_GET['seccion'] : 'splash';
+        ?>
 
         <?php
         switch ($seccion) {
+            case "splash": 
+                include("pages/splashscreen/index.php");
+                break;
             case "home":
                 include("pages/navbar/index.php");
                 include("pages/landingpage/index.php");
@@ -91,8 +96,8 @@
         }
 
     ?>
-<?php
-?>
+
+<script src="sweetalert2.all.min.js"></script>
     
 </body>
 </html>

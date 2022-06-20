@@ -22,7 +22,7 @@
 
         <div class="col m-4" style="position: relative;">
             <img style="position: absolute; left: 27%; height: auto; width: 100%; max-width: 350px;" src="./images/vinyl.svg" alt="">
-            <img src="./images/thank-u-next-ariana-grande.svg" style="position: absolute; height: auto; width: 100%; max-width: 350px;" alt="">
+            <img src="./images/pfp_default.svg" style="position: absolute; height: auto; width: 100%; max-width: 350px;" alt="">
         </div>
         <div class="col">
             <p class="subtitle mt-4">Hello, <?=$_SESSION["username"]?>!</p>
@@ -39,12 +39,9 @@
         <p class="subtitle2">My Orders</p>
         <div class="row">
 
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <img width="250px" height="250px" class="img-fluid" src="./images/after-hours-the-weeknd.svg" alt="">
-                <p class="general-text">Title - artist</p>
-            </div>
+            <?php
 
-            <?php 
+                $i = 0;
                 $id = $_SESSION["id"];
 
                 $consulta  = "SELECT idOrder FROM jramirez.order
@@ -61,7 +58,7 @@
                     $consultaDetail  = "SELECT idVinyl FROM jramirez.detailOrder
                                 WHERE idOrder = ?;";
 
-                    $queryDetail = $conn -> prepare($consultaDetail);
+                    $queryDetail = $conn -> prepare($consultaDetail); 
                     $queryDetail -> bindParam(1, $idOrder);
                     $queryDetail -> execute();
 
@@ -84,8 +81,8 @@
                             while($vinyl = $queryVinyl -> fetch()) {
 
                                 //Titulo e imagen
-                                print($vinyl["image"]);
-                                print($vinyl["vinylName"]);
+                                $imgV = $vinyl["image"];
+                                $nameV = $vinyl["vinylName"];
 
                                 $idArtist = $vinyl["idArtist"];
 
@@ -99,14 +96,26 @@
                                 while($artist = $queryArtist -> fetch()) {
 
                                     //Artista
-                                    print($artist["artistName"]);
+                                    $nameA = $artist["artistName"];
 
                                 }
 
                             }
                         }
+                        $i++;
+                        if($i < 5) {
+            ?>
 
-                    }
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <a id="link" href="?seccion=detailproduct&idVinyl=<?=$idVinyl?>">
+                    <img width="250px" height="250px" class="img-fluid" src="./images/<?=$imgV?>" alt="">
+                </a>
+                <p class="general-text"><?=$nameV?> - <?=$nameA?></p>
+            </div>
+
+            <?php     
+                        }  
+                    } 
                 }
             ?>
 
