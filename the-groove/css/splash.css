@@ -14,8 +14,8 @@
 
 /*IMAGE SPLASH*/
 .huge-vinyl {
-    width: 200 !important;
-    height: 200 !important;
+    width: 600 !important;
+    height: 600 !important;
     /*animation*/
     animation-duration: 2s;
     animation-name: rotation;

@@ -19,12 +19,10 @@
 </head>
 <body class="black-background splash-back">
     
-    <div style="background-color: black; width: 100%; height: 100%;">
         <div class="position-relative">
-            <img class="huge-vinyl start-vinyl" src="./images/vinyl.svg" alt="VINYL">
+            <img class="huge-vinyl start-vinyl" src="./images/vinyl-splash.svg" alt="VINYL">
             <div class="splash-text">the groove.</div>
         </div>
-    </div>
 
     <script>
         var timer = setTimeout(loadHome, 2500);
