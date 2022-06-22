@@ -25,8 +25,7 @@
       $_SESSION["phoneNumber"] =  $registro["phoneNumber"];
     }
   else
-  	print(':(');
-    //$redireccionar="?seccion=acceso&accion=ingresa&mensaje=novalido";
+  	print('Invalid credentials D:');
 ?>
 <script>
   window.location.href = "<?=$redireccionar?>";

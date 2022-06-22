@@ -84,6 +84,7 @@
                 $idCategory = "";
                 while($registro = $query->fetch()) {
                     $idCategory = $registro["idCategory"];
+                    $short_description = substr($registro["description"],0,280);
                     $contador++;
 
             ?>
@@ -95,7 +96,7 @@
                     </div>
                     <div class="col">
                         <h3 class="title-lato" style="width: 100%;"><?=$registro["artistName"]?> - <?=$registro["vinylName"]?></h3>
-                        <p class="general-text"><?=$registro["description"]?></p>
+                        <p class="general-text"><?=$short_description?>...</p>
                     </div>
                 </div>
                 <?php 
