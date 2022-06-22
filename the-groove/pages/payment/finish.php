@@ -1,5 +1,4 @@
 <?php 
-print("si entra ");
     $idOrder = $_GET["idOrder"];
     $consulta  = "  UPDATE jramirez.`order` SET idStatus = 1 WHERE (idOrder = ?);";
     $query = $conn->prepare($consulta);

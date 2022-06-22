@@ -223,5 +223,23 @@ INSERT INTO `jramirez`.`user` (`username`, `email`, `phoneNumber`, `password`) V
 -- DETAIL ORDER
 
 -- CART
+INSERT INTO `jramirez`.`cart` (`idUser`) VALUES ('1');
 
 -- DETAIL CART
+INSERT INTO `jramirez`.`detailCart` (`idVinyl`, `idCart`, `idStatus`) VALUES ('1', '1', '1');
+
+
+-- ACTUALIZACION NOMBRES COLUMN
+ALTER TABLE `jramirez`.`artist` 
+CHANGE COLUMN `name` `artistName` VARCHAR(100) NOT NULL ;
+
+ALTER TABLE `jramirez`.`vinyl` 
+CHANGE COLUMN `name` `vinylName` VARCHAR(100) NOT NULL ;
+
+
+
+
+INSERT INTO `jramirez`.`detailCart` (`idVinyl`, `idCart`, `idStatus`) VALUES ('2', '1', '4');
+UPDATE `jramirez`.`detailCart` SET `idStatus` = '4' WHERE (`idDetailCart` = '1');
+INSERT INTO `jramirez`.`detailCart` (`idVinyl`, `idCart`, `idStatus`) VALUES ('7', '1', '4');
+INSERT INTO `jramirez`.`detailCart` (`idVinyl`, `idCart`, `idStatus`) VALUES ('9', '1', '5');

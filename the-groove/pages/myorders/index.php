@@ -1,28 +1,57 @@
 <?php 
     $accion = (isset($_GET['accion']) && $_GET['accion']!='') ? $_GET['accion'] : 'lista';
     $id = $_SESSION["id"];
-
+    $filter_value = "-- select a status";
+    $parameter = "";
+    
+    $filter = 0;
     switch ($accion)
     {
         case "lista":
+            $filter = 0;
             $parameter ="";
-            
             break;
         case "search":
+            $filter = 0;
             $parameter = $_GET["val"];
+            $filterParameter = $_GET["val2"];
+            $filter_value = $filterParameter;
+            break;
+        case "filter":
+            $filter = 1;
+            $parameter = $_GET["val"];
+            $filterParameter = $_GET["val2"];
+            $filter_value = $filterParameter;
             break;
     }
+    if($filter){
+        $search = "%".$parameter."%";
+        $consulta  = "  SELECT dor.idOrder, s.description, v.vinylName, v.image, v.idVinyl  FROM jramirez.detailOrder dor 
+                        LEFT JOIN jramirez.`order` o ON dor.idOrder = o.idOrder
+                        LEFT JOIN jramirez.`status` s ON o.idStatus = s.idStatus
+                        LEFT JOIN jramirez.vinyl v ON dor.idVinyl = v.idVinyl
+                        WHERE idUser=? AND s.description = ? AND v.vinylName LIKE ?;";
+        $query = $conn->prepare($consulta);
+        $query->bindParam(1, $id);
+        $query->bindParam(2,  $filterParameter);
+        $query->bindParam(3,  $search);
+        
+    }else{
+        $search = "%".$parameter."%";
+        $consulta  = "  SELECT dor.idOrder, s.description, v.vinylName, v.image, v.idVinyl  FROM jramirez.detailOrder dor 
+                        LEFT JOIN jramirez.`order` o ON dor.idOrder = o.idOrder
+                        LEFT JOIN jramirez.`status` s ON o.idStatus = s.idStatus
+                        LEFT JOIN jramirez.vinyl v ON dor.idVinyl = v.idVinyl
+                        WHERE idUser=? AND v.vinylName LIKE ?;";
+        $query = $conn->prepare($consulta);
+        $query->bindParam(1, $id);
+        $query->bindParam(2,  $search);
+    }
 
-    $search = "%".$parameter."%";
-    $consulta  = "  SELECT dor.idOrder, s.description, v.vinylName, v.image, v.idVinyl  FROM jramirez.detailOrder dor 
-                    LEFT JOIN jramirez.`order` o ON dor.idOrder = o.idOrder
-                    LEFT JOIN jramirez.`status` s ON o.idStatus = s.idStatus
-                    LEFT JOIN jramirez.vinyl v ON dor.idVinyl = v.idVinyl
-                    WHERE idUser=? AND v.vinylName LIKE ?;";
-    $query = $conn->prepare($consulta);
-    $query->bindParam(1, $id);
-    $query->bindParam(2,  $search);
     $query->execute();
+    $contador = 0;
+
+    
 ?>
 
 <!DOCTYPE html>
@@ -52,9 +81,17 @@
                 <img class="img-icon abs-icon" src="./icons/search.svg" alt="">
                 </p>
             </div>
-            <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ms-5 parent ">
-                <p><input type="text" class="white-input relative-div" placeholder="Filter">
-                <img class="img-icon abs-icon" src="./icons/filter.svg" alt="">
+            <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ms-5 parent  ">
+                <p>
+                    <select style="-webkit-appearance: none;" class="white-input relative-div" name="filter" id="filter" onchange="filter(this.value)">
+                        <option disabled selected value="<?=$filter_value?>"><?=$filter_value?></option>
+                        <option value="Sent">Sent</option>
+                        <option value="Arrived">Arrived</option>
+                        <option value="Cancelled">Cancelled</option>
+                        <option value="In progress">In progress</option>
+
+                    </select>
+                    <img class="img-icon abs-icon" src="./icons/filter.svg" alt="">
                 </p>
             </div>
         </div>
@@ -80,12 +117,28 @@
             </div>
             <hr>
         <?php 
+        $contador++;
         } 
+
+        if(!$contador)
+            echo "<p class='text-center'>No results found</p>";
         ?>
     </div>
     <script>
+        function filter(val) {
+            window.location.href = "?seccion=myorders&accion=filter&val2="+val+"&val="+document.getElementById("search").value;
+        }
         function search(val) {
-            window.location.href = "?seccion=myorders&accion=search&val="+val;
+            if(val == ""){
+                window.location.href = "?seccion=myorders";
+
+            }else{
+                if(document.getElementById("filter").value == "-- select a status"){
+                    window.location.href = "?seccion=myorders&accion=search&val="+val+"&val2="+document.getElementById("filter").value;
+                }else{
+                    window.location.href = "?seccion=myorders&accion=filter&val="+val+"&val2="+document.getElementById("filter").value;
+                }
+            }
         }
 
         

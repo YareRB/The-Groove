@@ -29,7 +29,7 @@
         <form action="?seccion=products&accion=searchPage" method="post">
                 <div class="row">
                     <div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ms-5 mb-3 parent ">
-                            <p><input type="text" class="white-input relative-div" name="search" placeholder="Search...">
+                            <p><input value=<?=$_POST["search"]?> type="text" class="white-input relative-div" name="search" placeholder="Search...">
                                 <input type="image" class="img-icon abs-icon" src="./icons/search.svg" alt="Submit"/>
                             </p>
                     </div>
